@@ -6,7 +6,8 @@ function SpicyFoodList() {
 
   function handleAddFood() {
     const newFood = getNewSpicyFood();
-    console.log(newFood);
+    const newFoodArray = [...foods, newFood];
+    setFoods(newFoodArray);
   }
 
   const foodList = foods.map((food) => (
